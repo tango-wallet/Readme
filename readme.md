@@ -50,7 +50,7 @@ eeee
 
 > Este proyecto pose .ENV y los que debera tener estan en el .env.example
 
-> Tecnologias utilizadas: NextJS 14.x.x , Javascript y Tailwind
+> Tecnologias requerida para ejecutarlo: NodeJS y NPM
 
 # Backend TANGO WALLET
 
@@ -59,7 +59,8 @@ eeee
 ENDPOINT
 
 - `https://argcoupon.xyz/user`
-  Ejemplo: `https://argcoupon.xyz/user/info/user/:id`
+
+Ejemplo: `https://argcoupon.xyz/user/info/user/:id`
 
 2. Rutas de usuarios
 
@@ -69,3 +70,11 @@ ENDPOINT
    - `/update/address`
 
 3. Los ENV necesarios se encuentran en `.env.example`
+
+### Ejecucion
+
+1. git [clone https://github.com/tango-wallet/frontend-wallet.git](https://github.com/tango-wallet/backend-wallet)
+2. npm install
+3. npm start
+
+> Tecnologias requerida para ejecutarlo: NodeJS y NPM
