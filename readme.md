@@ -1,5 +1,3 @@
-eeee
-
 # Frontend TANGO WALLET
 
 ### Link: tangowallet.sitio
@@ -9,38 +7,38 @@ eeee
 
 ```
 -- Login / Register
-                    -- Dashboard -
-                                 - Leer QR
-                                 - Depositar    ->  Generar QR
-                                                ->  Generar enlace
-                                                ->  Datos de Cuenta
-                                                ->  Deposito con Mercado pago - Pronto
-                                 - Transferencia
-                                                -> Solo ingresamos dos elementos
-                                                    -> Monto
-                                                    -> Wallet o Alias
+                    --> Dashboard -
+                                 - Read QR
+                                 - Deposit    ->  Generate QR
+                                                ->  Generate link
+                                                ->  Account data
+                                                ->  Deposit with Mercado pago
+                                 - Transfer
+                                                -> Only two elements are required
+                                                    -> Amount
+                                                    -> Wallet or Alias
 ```
 
-## Leer QR
+## Read QR
 
 ![alt text](image.png)
 
 > [!NOTE]
-> Esta opción nos permite leer códigos QR con la cámara que se generan a través de `Depositar -> Generar QR`
+> This option allows us to scan QR codes with the camera, which are generated through `Deposit -> Generate QR`
 
-## Depositar
+## Deposit
 
 ![alt text](image-1.png)
 
 > [!NOTE]
 > Aquí podemos generar códigos QR y enlaces de pago, así como también ver los datos de la cuenta con su respectivo alias y wallet
 
-### Transferir
+### Transfer
 
 ![alt text](image-3.png)
 
 > [!NOTE]
-> Dentro de la opción transferir, podemos realizar transferencias a otras cuentas con solo dos elementos: el alias o wallet y el monto.
+> In the transfer option, we can make transfers to other accounts with just two elements: the alias or wallet and the amount.
 
 ### Ejecucion
 
@@ -48,13 +46,13 @@ eeee
 2. npm install
 3. npm run dev
 
-> Este proyecto pose .ENV y los que debera tener estan en el .env.example
+> This project requires an .ENV file, and the necessary variables can be found in .env.example.
 
-> Tecnologias requerida para ejecutarlo: NodeJS y NPM
+> Technologies required to run it: NodeJS and NPM.
 
 # Backend TANGO WALLET
 
-1. Solo poseemos endpoint que integra todas las acciones de un usuario como registro, y update en campos del modelo
+1. We only have an endpoint that integrates all user actions such as registration and updating fields in the model
 
 ENDPOINT
 
@@ -68,13 +66,23 @@ Ejemplo: `https://argcoupon.xyz/user/info/user/:id`
    - `/register`
    - `/info/user/:id`
    - `/update/address`
+   - `/transfer`
 
-3. Los ENV necesarios se encuentran en `.env.example`
+3. The necesarie ENV is found in `.env.example`
 
-### Ejecucion
+### Execution
 
 1. git [clone https://github.com/tango-wallet/frontend-wallet.git](https://github.com/tango-wallet/backend-wallet)
 2. npm install
 3. npm start
 
-> Tecnologias requerida para ejecutarlo: NodeJS y NPM
+> Technologies required to run it: NodeJS and NPM
+
+## Scroll Contract 
+
+https://l1sload-blockscout.scroll.io/address/0x2b190866F036A27546C7D0918ebecEF61921E957/contracts#address-tabs
+
+## Architecture
+https://www.figma.com/board/lDtPTRQKLr0gf6RMiQ5OaS/Tango-Wallet-Estructura?node-id=208-561&t=mcqrsm5NwFraiALi-0
+
+In further developments we will work on L1SLOAD as a sync memory for L1 L2 interoperability, with the user case of ENS.
